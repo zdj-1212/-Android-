@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AnswerActivity">
+
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline6"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.5"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline7"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.9"/>
+    <fragment
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_weight="1"
+            android:id="@+id/bottom"
+            android:name="com.example.appfinal.BottomTabFragment" app:layout_constraintTop_toTopOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp"
+                app:layout_constraintVertical_weight="1"
+                android:id="@+id/srcqq"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/guideline7">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                           android:layout_height="match_parent">
+
+            <TextView
+                    android:text="1.包了口香糖的纸巾属于哪一类垃圾？"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView10"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+            <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/one"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView10">
+                <RadioButton
+                        android:text="其他垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/one1"/>
+                <RadioButton
+                        android:text="有害垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/one2"/>
+                <RadioButton
+                        android:text="可回收物"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/one3"/>
+                <RadioButton
+                        android:text="厨余垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/one4"/>
+            </RadioGroup>
+            <TextView
+                    android:text="2.保鲜膜属于哪类垃圾？"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView11"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/one"/>
+            <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/two"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView11">
+                <RadioButton
+                        android:text="其他垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/two1"/>
+                <RadioButton
+                        android:text="有害垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/two2"/>
+                <RadioButton
+                        android:text="可回收物"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/two3"/>
+                <RadioButton
+                        android:text="厨余垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/two4"/>
+            </RadioGroup>
+            <TextView
+                    android:text="3.变质的香肠属于哪一类垃圾？"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView12"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/two"/>
+            <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/three"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView12">
+                <RadioButton
+                        android:text="其他垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/three1"/>
+                <RadioButton
+                        android:text="有害垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/three2"/>
+                <RadioButton
+                        android:text="可回收物"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/three3"/>
+                <RadioButton
+                        android:text="厨余垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/three4"/>
+            </RadioGroup>
+            <TextView
+                    android:text="4.槟榔渣属于哪类垃圾？"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView13"
+                    app:layout_constraintTop_toBottomOf="@+id/three" app:layout_constraintStart_toStartOf="parent"/>
+            <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/four"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView13">
+                <RadioButton
+                        android:text="其他垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/four1"/>
+                <RadioButton
+                        android:text="有害垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/four2"/>
+                <RadioButton
+                        android:text="可回收物"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/four3"/>
+                <RadioButton
+                        android:text="厨余垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/four4"/>
+            </RadioGroup>
+            <TextView
+                    android:text="5.剥掉的蛋壳属于哪一类垃圾"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView14"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/four"/>
+            <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/five"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView14">
+                <RadioButton
+                        android:text="其他垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/five1"/>
+                <RadioButton
+                        android:text="有害垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/five2"/>
+                <RadioButton
+                        android:text="可回收物"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/five3"/>
+                <RadioButton
+                        android:text="厨余垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/five4"/>
+            </RadioGroup>
+            <TextView
+                    android:text="6.菜刀属于哪类垃圾？"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView15"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/five"/>
+            <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/six"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView15">
+                <RadioButton
+                        android:text="其他垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/six1"/>
+                <RadioButton
+                        android:text="有害垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/six2"/>
+                <RadioButton
+                        android:text="可回收物"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/six3"/>
+                <RadioButton
+                        android:text="厨余垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/six4"/>
+            </RadioGroup>
+            <TextView
+                    android:text="7.茶叶渣应扔进哪个垃圾桶？"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView16"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/six"/>
+            <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seven"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView16">
+                <RadioButton
+                        android:text="其他垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/seven1"/>
+                <RadioButton
+                        android:text="有害垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/seven2"/>
+                <RadioButton
+                        android:text="可回收物"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/seven3"/>
+                <RadioButton
+                        android:text="厨余垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/seven4"/>
+            </RadioGroup>
+            <TextView
+                    android:text="8.吃剩的饼干渣是什么垃圾？"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView17"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/seven"/>
+            <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eight"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView17">
+                <RadioButton
+                        android:text="其他垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/eight1"/>
+                <RadioButton
+                        android:text="有害垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/eight2"/>
+                <RadioButton
+                        android:text="可回收物"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/eight3"/>
+                <RadioButton
+                        android:text="厨余垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/eight4"/>
+            </RadioGroup>
+            <TextView
+                    android:text="9.抽完烟的烟蒂是什么垃圾？"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView18"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/eight"/>
+            <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nine"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView18">
+                <RadioButton
+                        android:text="其他垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/nine1"/>
+                <RadioButton
+                        android:text="有害垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/nine2"/>
+                <RadioButton
+                        android:text="可回收物"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/nine3"/>
+                <RadioButton
+                        android:text="厨余垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/nine4"/>
+            </RadioGroup>
+            <TextView
+                    android:text="10.刀片属于哪类垃圾？"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView19"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/nine"/>
+            <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ten"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView19">
+                <RadioButton
+                        android:text="其他垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/ten1"/>
+                <RadioButton
+                        android:text="有害垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/ten2"/>
+                <RadioButton
+                        android:text="可回收物"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/ten3"/>
+                <RadioButton
+                        android:text="厨余垃圾"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/ten4"/>
+
+            </RadioGroup>
+            <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="提交"
+            android:id="@+id/tijiao"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/ten"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

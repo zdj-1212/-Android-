@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SelectActivity">
+
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline8"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.9"/>
+    <fragment
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_weight="1"
+            android:id="@+id/bottom"
+            android:name="com.example.appfinal.BottomTabFragment" app:layout_constraintTop_toTopOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text=""
+            android:hint="请输入搜索内容"
+            android:ems="10"
+            android:id="@+id/search1"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline9"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline9"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.75"/>
+    <Button
+            android:text="搜索"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/search2"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="@+id/guideline9"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                       android:layout_height="0dp"
+                                                       app:layout_constraintVertical_weight="1"
+                                                       app:layout_constraintBottom_toTopOf="@+id/guideline8"
+                                                       app:layout_constraintTop_toBottomOf="@+id/search1">
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rubbishlist"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

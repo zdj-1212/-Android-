@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+
+             tools:context=".BottomTabFragment">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                  android:layout_gravity="center_horizontal"
+                  android:orientation="horizontal" app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintStart_toStartOf="parent" android:id="@+id/linearLayout">
+        <ImageView
+                android:src="@drawable/dati"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/idati" android:layout_weight="1"/>
+        <ImageView
+                android:src="@drawable/chaxun"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/ichaxun" android:layout_weight="1"/>
+        <ImageView
+                android:src="@drawable/baike"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/ibaike" android:layout_weight="1"/>
+        <ImageView
+                android:src="@drawable/shezhi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/ishezhi" android:layout_weight="1"/>
+        <ImageView
+                android:src="@drawable/riji"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/iriji" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="50dp"
+                  android:layout_gravity="center_horizontal"
+                  android:orientation="horizontal"
+                  app:layout_constraintTop_toBottomOf="@+id/linearLayout" app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+                android:text="答题"
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/tdati" android:layout_weight="1"/>
+        <TextView
+                android:text="查询"
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/tchaxun" android:layout_weight="1"/>
+        <TextView
+                android:text="百科"
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/tbaike" android:layout_weight="1"/>
+        <TextView
+                android:text="设置"
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/tshezhi" android:layout_weight="1"/>
+        <TextView
+                android:text="日记"
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/triji" android:layout_weight="1"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
